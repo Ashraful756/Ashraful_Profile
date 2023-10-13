@@ -1,0 +1,55 @@
+/* night-mode.css */
+
+body.night-mode {
+    background-color: #121212;
+    /* Dark background color */
+    color: #ffffff;
+    /* Light text color */
+}
+
+
+/* Add specific styles for elements as needed */
+
+.navbar.night-mode {
+    background-color: #121212;
+    /* Dark navbar background color */
+}
+
+
+/* Button Styles */
+
+#night-mode-button {
+    position: relative;
+    width: 60px;
+    height: 30px;
+    background-color: #ddd;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+/* Switch Handle Styles */
+
+#night-mode-button::before {
+    content: "";
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    background-color: #fff;
+    border-radius: 50%;
+    left: 2px;
+    top: 2px;
+    transition: transform 0.3s ease;
+}
+
+
+/* Night Mode Active Styles */
+
+body.night-mode #night-mode-button {
+    background-color: #333;
+}
+
+body.night-mode #night-mode-button::before {
+    transform: translateX(30px);
+}

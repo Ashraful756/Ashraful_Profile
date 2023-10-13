@@ -71,3 +71,16 @@ $(document).ready(function() {
         }
     });
 });
+
+// script.js
+// Function to toggle night mode
+function toggleNightMode() {
+    const body = document.body;
+    body.classList.toggle('night-mode');
+}
+
+// Event listener for a night mode toggle button, if you have one
+const nightModeButton = document.getElementById('night-mode-button');
+if (nightModeButton) {
+    nightModeButton.addEventListener('click', toggleNightMode);
+}
